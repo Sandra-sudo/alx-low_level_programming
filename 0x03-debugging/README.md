@@ -1,1 +1,2 @@
-useful c function debugging
+ C - Debugging
+ 
