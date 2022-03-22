@@ -1,1 +1,1 @@
-outcast
+pointers and strings
