@@ -1,17 +1,12 @@
-#include <stdio.h>
-#include <ctype.h>
 #include "main.h"
-
 /**
- * _isalpha - Checks if the lettr c is a letter,
- * lowercase or alphabet
- * Return: 0 or 1 depending on the answer
- * @c: just a letter
-*/
-
+ * _isalpha - check the c is letter
+ * @c: the character checked
+ * Return: 1 if lowercase or uppercase letter 0 otherwise
+ */
 int _isalpha(int c)
 {
-if isalpha(c)
+if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
 {
 return (1);
 }

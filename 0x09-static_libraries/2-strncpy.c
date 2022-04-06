@@ -1,16 +1,22 @@
-#include <stdio.h>
-#include <string.h>
 #include "main.h"
-
+#include <stdio.h>
 /**
- * _strncpy - func that copies a string
- * @dest: pointer to character array to copy to
- * @src: pointer to character array to copy from
- * @n: maximum number of characters to copy
- * Return: returns the copies string
+ *_strncpy - copies a string
+ *@dest: dest
+ *@src: src
+ *@n: n
+ *Return: pointer to dest
  */
-
 char *_strncpy(char *dest, char *src, int n)
 {
-	return (strncpy(dest, src, n));
+int i;
+for (i = 0; i < n && src[i] != '\0'; i++)
+{
+dest[i] = src[i];
+}
+while (i < n)
+{
+dest[i++] = '\0';
+}
+return (dest);
 }
